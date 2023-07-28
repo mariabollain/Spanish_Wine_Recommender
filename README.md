@@ -31,6 +31,9 @@ Finally, I carried out clustering using different models (KMeans, DBSCAN, Gaussi
 From the input (a wine from the dataset), the recommender selects the five most similar wines within the same cluster, using cosine similarity.
 
 ## Results
+![result-TruncatedSVD](https://github.com/mariabollain/Final_project_Wine_recommender/assets/122167121/fdff99ce-232b-4351-aba9-492a1d05d343)
+Clustering with KMeans and K=13, after dimensionality reduction with TruncatedSVD.
+
 
 
 ---
