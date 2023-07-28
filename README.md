@@ -21,18 +21,22 @@ The aim with this project is to recommend to customers wines in the style they e
 ## Process
 To collect the data I have webscraped Vinissimus.com, an online shop specialised in Spanish wines, to obtain a dataset with information about 5345 unique wines. 
 
-After cleaning the dataset, I carried out an exhaustive exploratory analysis of the different features, with special emphasis on the insights we can get from customer reviews and tasting notes (bouquet and mouth). These tasting notes are the only features I have used for clustering, to find wines that are similar in bouquet and mouth, regardless of other characteristics.
+After cleaning the dataset, I carried out an exhaustive exploratory analysis of the different features, with special emphasis on the insights we can obtain from analysing the customer reviews and on the tasting notes (bouquet and mouth). These tasting notes have been the only features used for clustering, in order to find wines that are similar in bouquet and mouth, regardless of other characteristics.
 
-The biggest difficulty in the project has been the enormous variability in tasting descriptors, with 653 different terms, which on average appeared in less than 2% of the wines in the dataset. So I carried out a task of simplifying the tasting terms, merging them into broader categories (e.g. "strawberry" and "raspberry" into "red fruit"), followed by the elimination of all those terms appearing in less than 300 wines.
+The biggest difficulty in the project has been the enormous variability in tasting descriptors, with 653 different terms, which on average appeared in less than 2% of the wines in the dataset. It was necessary to carry out a simplification of the tasting terms, merging them into broader categories (e.g. "strawberry" and "raspberry" into "red fruit"), followed by the elimination of all those terms appearing in less than 300 wines.
 
 I then applied Word2Vec to obtain embeddings from the different terms, and TF-IDF to obtain vectors for each wine. Here we encounter the second difficulty in the project, and that is the limited size of the training data. Since the corpus used for training the model was not large enough, the quality of the word embeddings was not very high.
+
 Finally, I carried out clustering using different models (KMeans, DBSCAN, Gaussian Mixture).
 
 From the input (a wine from the dataset), the recommender selects the five most similar wines within the same cluster, using cosine similarity.
 
 ## Results
+Clustering with KMeans and K=13, after dimensionality reduction with TruncatedSVD:
+
 ![result-TruncatedSVD](https://github.com/mariabollain/Final_project_Wine_recommender/assets/122167121/fdff99ce-232b-4351-aba9-492a1d05d343)
-Clustering with KMeans and K=13, after dimensionality reduction with TruncatedSVD.
+
+Silhouette score visualizer:
 ![silhouette](https://github.com/mariabollain/Final_project_Wine_recommender/assets/122167121/e52d72e3-06dd-40ee-87f3-32ee1cef57a5)
 
 ---
