@@ -33,8 +33,7 @@ From the input (a wine from the dataset), the recommender selects the five most 
 ## Results
 ![result-TruncatedSVD](https://github.com/mariabollain/Final_project_Wine_recommender/assets/122167121/fdff99ce-232b-4351-aba9-492a1d05d343)
 Clustering with KMeans and K=13, after dimensionality reduction with TruncatedSVD.
-
-
+![silhouette](https://github.com/mariabollain/Final_project_Wine_recommender/assets/122167121/e52d72e3-06dd-40ee-87f3-32ee1cef57a5)
 
 ---
 This project was developed in three weeks as the final project for the Data Analytics bootcamp at Ironhack.
