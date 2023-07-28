@@ -81,11 +81,16 @@ def find_similar_wines(wine_name, filters, num_similar=5):
         if "All" in filters["grapes"]:
             filters["grapes"].remove("All")
         grapes_mask = cluster_wines["grapes"].apply(lambda x: any(grape in x for grape in filters["grapes"]))
+    if filters["parker_penin"] == True:
+        score_mask = cluster_wines["parker_penin_score"] == 1
+    else:
+        score_mask = np.ones(len(cluster_wines), dtype=bool)  # Select all wines (no filtering by score)
     price_mask = cluster_wines["price"].between(*filters["price"])
     year_mask = cluster_wines["year"].between(*filters["year"])
     reviews_mask = cluster_wines["customer_reviews"].between(*filters["reviews"])
 
-    filtered_wines = cluster_wines[type_mask & region_mask & grapes_mask & price_mask & year_mask & reviews_mask]
+    filtered_wines = cluster_wines[type_mask & region_mask & grapes_mask & price_mask & year_mask
+                                   & reviews_mask & score_mask]
 
     # Check if the filtered_wines dataframe is empty
     if filtered_wines.empty:
@@ -180,12 +185,15 @@ def main():
         options=list(np.arange(0.0, 5.5, 0.5)),
         value=(4.0, 5.0))
 
+    parker_penin = st.sidebar.checkbox("Show me only wines with a Parker or Peñín score of at least 90")
+
     filters = {"type": wine_type,
                "region": region,
                "grapes": grapes,
                "price": price_range,
                "year": year_range,
-               "reviews": reviews_range}
+               "reviews": reviews_range,
+               "parker_penin": parker_penin}
 
     # Button for running the recommender
     if st.button("RECOMMEND"):
