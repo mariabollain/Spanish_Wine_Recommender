@@ -16,7 +16,7 @@ The aim with this project is to recommend to customers wines in the style they e
      -  [Script](https://github.com/mariabollain/Final_project_Wine_recommender/blob/main/05-app/main.py)
  - [Tableau](https://public.tableau.com/views/wine_dashboard_16904972267650/Dashboard12?:language=es-ES&:display_count=n&:origin=viz_share_link)
  - [SQL](https://github.com/mariabollain/Final_project_Wine_recommender/blob/main/06-sql/SQL-queries.sql)
- - Slides    
+ - [Slides](https://www.canva.com/design/DAFpuEMksWg/1xdfMoTIo8doyWWEKdvFBA/edit?utm_content=DAFpuEMksWg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)    
 
 ## Process
 To collect the data I have webscraped Vinissimus.com, an online shop specialised in Spanish wines, to obtain a dataset with information about 5345 unique wines. 
