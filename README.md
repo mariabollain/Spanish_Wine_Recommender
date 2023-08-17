@@ -5,6 +5,8 @@ Most online wine shops tend to recommend wines that are very similar to the init
 
 The aim with this project is to recommend to customers wines in the style they enjoy, but not necessarily from the same region or grape variety.  Wines that can surprise them by discovering something new.
 
+This project was developed in three weeks as the final project for the Data Analytics bootcamp at Ironhack.
+
 ## Tools and links to files
 - Python (Jupiter Notebooks)
      - [Webscrapping](https://github.com/mariabollain/Final_project_Wine_recommender/blob/main/01-initial_data/webscraping/webscraping_clean.ipynb)
@@ -44,7 +46,3 @@ Silhouette score visualizer:
 Preview:
 
 ![Recording 2023-07-28 at 21 16 21](https://github.com/mariabollain/Final_project_Wine_recommender/assets/122167121/8881609d-d69d-460a-a367-9aa10be67d85)
-
-
----
-This project was developed in three weeks as the final project for the Data Analytics bootcamp at Ironhack.
