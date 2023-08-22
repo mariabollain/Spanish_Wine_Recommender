@@ -19,7 +19,7 @@ def load_data(path):
     df = pd.read_csv(path, converters={"embeddings": literal_eval})
     return df
 
-path = "C:/Users/mboll/OneDrive/Documentos/DATA/Ironhack/Final_project/04-clustering/wine_clusters.csv"
+path = "../04-clustering/wine_clusters.csv"
 wine_clusters = load_data(path)
 
 # Define the custom tokenizer function at the module level to avoid errors
@@ -118,7 +118,7 @@ def find_similar_wines(wine_name, filters, num_similar=5):
 def main():
 
     # Title
-    st.title("Wine recommender")
+    st.title("Spanish Wines Recommender")
 
     # Main user input: wine name
     user_wine = st.selectbox(label="Please, select a wine", options=wine_clusters)
@@ -155,7 +155,7 @@ def main():
                       'La Palma', 'Ribera del Guadiana', 'Barbanza e Iria', 'Cangas',
                       'Dominio de Valdepusa', 'Vallegarcía', 'Tierra del Vino de Zamora', 'Uclés']
 
-    region = st.sidebar.selectbox(label="Geographical indication", options=region_options)
+    region = st.sidebar.selectbox(label="Region", options=region_options)
 
     grapes_options = ['All', 'Tempranillo', 'Garnacha', 'Cabernet Sauvignon', 'Syrah', 'Macabeo',
        'Xarel·lo', 'Merlot', 'Cariñena', 'Chardonnay', 'Parellada', 'Albariño',
@@ -176,7 +176,7 @@ def main():
         value=(5, 40))
 
     year_range = st.sidebar.select_slider(
-        "Year",
+        "Vintage",
         options=list(range(2000,2024)),
         value=(2017, 2023))
 

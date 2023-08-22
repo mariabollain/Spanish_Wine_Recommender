@@ -19,7 +19,7 @@ def load_data(path):
     df = pd.read_csv(path, converters={"embeddings": literal_eval})
     return df
 
-path = "C:/Users/mboll/OneDrive/Documentos/DATA/Ironhack/Final_project/04-clustering/wine_clusters.csv"
+path = "../04-clustering/wine_clusters.csv"
 wine_clusters = load_data(path)
 
 # Define the custom tokenizer function at the module level to avoid errors
