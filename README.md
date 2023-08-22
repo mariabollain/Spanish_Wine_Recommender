@@ -1,9 +1,11 @@
 # Final Project: Spanish Wines Recommender
-The aim of this project is to build a wine recommender using unsupervised machine learning techniques. 
+The goal of this project is to build a wine recommender using unsupervised machine learning techniques. 
 
 Most online wine shops tend to recommend wines that are very similar to the initial one (usually, they are wines from the same region or even from the same winery). 
 
 The aim with this project is to recommend to customers wines in the style they enjoy, but not necessarily from the same region or grape variety.  Wines that can surprise them by discovering something new.
+
+This project was developed in three weeks as the final project for the Data Analytics bootcamp at Ironhack.
 
 ## Tools and links to files
 - Python (Jupiter Notebooks)
@@ -16,7 +18,7 @@ The aim with this project is to recommend to customers wines in the style they e
      -  [Script](https://github.com/mariabollain/Final_project_Wine_recommender/blob/main/05-app/main.py)
  - [Tableau](https://public.tableau.com/views/wine_dashboard_16904972267650/Dashboard12?:language=es-ES&:display_count=n&:origin=viz_share_link)
  - [SQL](https://github.com/mariabollain/Final_project_Wine_recommender/blob/main/06-sql/SQL-queries.sql)
- - Slides    
+ - [Slides](https://www.canva.com/design/DAFpuEMksWg/1xdfMoTIo8doyWWEKdvFBA/edit?utm_content=DAFpuEMksWg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)    
 
 ## Process
 To collect the data I have webscraped Vinissimus.com, an online shop specialised in Spanish wines, to obtain a dataset with information about 5345 unique wines. 
@@ -44,7 +46,3 @@ Silhouette score visualizer:
 Preview:
 
 ![Recording 2023-07-28 at 21 16 21](https://github.com/mariabollain/Final_project_Wine_recommender/assets/122167121/8881609d-d69d-460a-a367-9aa10be67d85)
-
-
----
-This project was developed in three weeks as the final project for the Data Analytics bootcamp at Ironhack.
