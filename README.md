@@ -1,4 +1,4 @@
-# Final Project: Spanish Wines Recommender
+# Ironhack Final Project: Spanish Wines Recommender
 The goal of this project is to build a wine recommender using unsupervised machine learning techniques. 
 
 Most online wine shops tend to recommend wines that are very similar to the initial one (usually, they are wines from the same region or even from the same winery). 
